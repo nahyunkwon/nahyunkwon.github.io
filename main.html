@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1000px, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nahyun Kwon</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.2.3/firebase-app.js"></script>
+
+  <script src="/__/firebase/7.2.3/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">CSCE 679</div>
+      <div class="list-group list-group-flush">
+        <a href="#Assignments" class="list-group-item list-group-item-action bg-light">Assignments</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <br>
+
+      <div class="container-fluid">
+        <br>
+        <div class="profile" style="float:left;;">
+          <img width="130px" src="./profile.jpg" style="border-radius:12px">
+        </div>
+        <div class="profile_text" style="padding-top:10px; padding-left:150px;">
+          <h1>
+            Nahyun Kwon
+          </h1>
+
+
+          <font style="color:#006400;">
+          <!--PhD Student, Computer Science, Texas A&M University, TX, US
+
+            <br>
+          B.S of Computer Science and Engineering, Ewha Womans University, South Korea
+          -->
+
+            Hello, my name is Nahyun [Na-HyəN], a Ph.D. student in Computer Science at Texas A&M University.<br>
+            I am a member of <a href="https://hcied.info/">HCIED (HCI Engineering & Design) Lab</a>, under the supervision of <a href="http://www.jeeeunkim.com/">Dr. Jeeeun Kim</a>.<br>
+            I decided to take this Data Visualization class to learn about various visualization methods for different data types
+            when I write an academic paper. I am also interested in interactive data visualization using libraries such as D3,
+            so I hope I can try a really interesting project in this class!
+            <br><br>
+
+
+        </font>
+
+        </div>
+
+        <br>
+        <hr>
+        <div id="Assignments">
+          <div class="inner">
+            <h3>Assignments</h3>
+            <br>
+
+            <details>
+              <summary>
+                Assignment 1: Helpful & Unhelpful Data Visualization
+              </summary>
+              <p>
+              <div class="desc">
+              <li>One data visualization that I find particularly helpful/insightful</li>
+
+              <p>
+                <img src="image/csce_679/interactive_classification.png" style="width:80%"><br>
+                <a href="https://fredhohman.com/papers/interactive-classification">Interactive Classification for Deep Learning Interpretation</a><br>
+                I found this project's data visualization method is particularly insightful.
+                There are many ways to highlight the region of interest by the human workforce.
+                In this project, the users can modify the image itself with inpainting algorithm to remove some image features they would like to exclude from the deep learning model's attention.
+                Their system shows the modified prediction results in real-time along with the modified image, which is very robust way to let users understand how prediction results are changing upon their modification.
+                I think this will be also very good for educating the basic idea of the relationship of deep learning model's understanding and the region of interest as an input.
+              </p>
+
+
+              <li>One data visualization that I find is particularly bad/unhelpful</li>
+
+              <p>
+
+                <img src="image/csce_679/vis_bad_example.png" style="width:300px"><br>
+
+                <a href="https://www.reddit.com/r/dataisugly/comments/pkpvtd/hospital_icu_beds_are_filling_up_in_some_states/">Hospital ICU beds are filling up in some states</a>
+                <br>
+                While searching for some bad visualization examples in 'dataisugly' subreddit, I found a really bad example that does not give any insight.
+                Since they set the scale from 44.2% to 724.7% which is too large, all the regions are just having the same color.
+                In this scaling that does not make sense, we cannot get any idea about what's the difference of regions, because most of them appear to be within the small range around 44.7%.
+              </p>
+
+            </div>
+              </p>
+            </details>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
