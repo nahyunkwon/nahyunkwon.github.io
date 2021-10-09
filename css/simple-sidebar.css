@@ -91,13 +91,14 @@ td {
   font-size:16px;
 }
 .card img {
-  width: 30%;
+
   max-height:190px;
   max-width:210px;
 
   border-top-right-radius: 0;
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
+
 .card-text{
   font-size:13px;
 }
@@ -112,12 +113,23 @@ td {
   .card-body .card-text {
     margin: 0;
   }
-  .card img {
-    width: 50%;
+  .card-img-top {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 100px) {
   .card img {
     width: 40%;
+  }
+}
+
+.inner-container{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .inner-container {
+    flex-direction:column;
   }
 }
