@@ -92,8 +92,8 @@ td {
 }
 .card img {
 
-  max-height:190px;
-  max-width:210px;
+  max-height:350px;
+  width:300px;
 
   border-top-right-radius: 0;
   border-bottom-left-radius: calc(0.25rem - 1px);
@@ -114,12 +114,8 @@ td {
     margin: 0;
   }
   .card-img-top {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 100px) {
-  .card img {
-    width: 40%;
+    max-height:450px;
+    max-width:450px;
   }
 }
 
